@@ -89,4 +89,6 @@
 // }
 // console.log(dup(arr));
 
-
+const countElements = (arr) =>{
+    
+}

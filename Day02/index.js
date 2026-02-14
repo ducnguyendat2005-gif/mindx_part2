@@ -1,5 +1,6 @@
 import {findMin,countWords,sumbyKey,sortStringsByLength,convertToArray,getAdults
-    ,groupByFirstLetter,filterByMinValue,intersection,uniqueValues,sumByGroup,hasDuplicate
+    ,groupByFirstLetter,filterByMinValue,intersection,uniqueValues,sumByGroup,hasDuplicate,
+    countElements
 } from "./utils.js"
 
 console.log(findMin({ a: 100, b: 20, c: 50 }));
@@ -37,7 +38,9 @@ console.log(sumByGroup([
     { type: 'fruit', price: 30 }])
 );
 
-console.log(hasDuplicate([1, 2, 3, 4,2]))
+console.log(hasDuplicate([1, 2, 3, 4, 2]))
+
+console.log(countElements(['a', 'b', 'a', 'c', 'b', 'a']));
 
 
 

@@ -112,6 +112,19 @@ const hasDuplicate = (arr) => {
     }
     return false
 }
+
+const countElements = (arr) =>{
+    let rs = {}
+    for (let i of arr){
+        if (rs[i]){
+            rs[i] = rs[i] + 1
+        }
+        else{
+            rs[i] = 1
+        }
+    }
+    return rs
+}
 export {findMin,countWords,sumbyKey,sortStringsByLength,convertToArray,getAdults,groupByFirstLetter,filterByMinValue
-    ,intersection,uniqueValues,sumByGroup,hasDuplicate
+    ,intersection,uniqueValues,sumByGroup,hasDuplicate,countElements
 }
