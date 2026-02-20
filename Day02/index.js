@@ -1,6 +1,6 @@
 import {findMin,countWords,sumbyKey,sortStringsByLength,convertToArray,getAdults
     ,groupByFirstLetter,filterByMinValue,intersection,uniqueValues,sumByGroup,hasDuplicate,
-    countElements
+    countElements,cleanObject,findSecondLargest,isSymmetric,flattenArray,removeDuplicates,countOccurrences,sumofArr
 } from "./utils.js"
 
 console.log(findMin({ a: 100, b: 20, c: 50 }));
@@ -42,8 +42,18 @@ console.log(hasDuplicate([1, 2, 3, 4, 2]))
 
 console.log(countElements(['a', 'b', 'a', 'c', 'b', 'a']));
 
+console.log(cleanObject({ a: 1, b: null, c: undefined, d: 4 }));
 
+console.log(findSecondLargest([3, 1, 4, 2, 4]));
 
+console.log(isSymmetric([1, 2, 3, 2, 1]));
 
+console.log(flattenArray([[1, 2], [3, 4]]));
+
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 6, 2, 3, 6]));
+
+console.log(countOccurrences([1, 2, 2, 3, 2],2));
+
+console.log(sumofArr([1, 2, 3, 4]));
 
 

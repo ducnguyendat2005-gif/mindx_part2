@@ -89,6 +89,78 @@
 // }
 // console.log(dup(arr));
 
-const countElements = (arr) =>{
-    
-}
+// let obj = { a: 1, b: null, c: undefined, d: 4 }
+// let rs = {}
+// for (let key in obj) {
+//     if (obj[key] === null || obj[key] === undefined){
+//         continue
+//     }
+//     rs[key] = obj[key]
+// }
+// console.log(rs);
+
+// const obj1 = { a: 10, b: 20 };
+// const obj2 = { b: 30, c: 40 };
+// let rs = Object.assign({},obj1)
+// console.log(rs);
+// for (let key in obj2){
+//     if (rs[key]){
+//         rs[key] = rs[key] + obj2[key]
+//     }
+//     else{
+//         rs[key] = obj2[key]
+//     }
+// }
+
+// let obj1 = {a : 10, b: 20, c: 30, d: 40, c: 50}
+// let obj2 = {d: 40, c: 50,e:60}
+// let rs = Object.assign({},obj1)
+// for (let key in obj2){
+//     if (rs[key]){
+//         rs[key] = rs[key] + obj2[key]
+//     }else{
+//         rs[key] = obj2[key]
+//     }
+// }
+// console.log(rs);
+
+// arr = [
+//     { type: 'fruit', name: 'apple' },
+//     { type: 'vegetable', name: 'carrot' },
+//     { type: 'fruit', name: 'banana' }
+// ];
+// let rs = {}
+// for(let i of arr){
+//     if (rs[i.type]){
+//         rs[i.type].push(i.name)
+//     }else{
+//         rs[i.type] = [i.name]
+//     }
+// }
+// console.log(rs);
+
+// const arr = [3, 1, 4, 2, 4]
+
+// arr.sort((a,b) => a - b)
+
+// console.log(arr.at(-1)-1);
+
+// const arr = [1, 2, 3, 3, 1]
+// let arrRS = []
+// for (let i = arr.length-1; i>=0;i--){
+//     arrRS.push(arr[i])
+// }
+// const isEqual = (a, b) => {
+//   if (a.length !== b.length) return false;
+
+//   return a.every((value, index) => value === b[index]);
+// };
+
+// console.log(isEqual(arr, arrRS));
+
+const arr = [[1, 2], [3, 4]]
+
+let arrRS1 = arr[0]
+let arrRS2 = arr[1]
+arrRS = [...arrRS1 ,...arrRS2]
+console.log(arrRS);

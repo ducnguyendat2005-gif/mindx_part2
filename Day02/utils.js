@@ -125,6 +125,72 @@ const countElements = (arr) =>{
     }
     return rs
 }
+
+const cleanObject = (obj) =>{
+    let rs = {}
+    for (let key in obj) {
+        if (obj[key] === null || obj[key] === undefined){
+            continue
+        }
+        rs[key] = obj[key]
+    }
+    return rs
+}
+
+const findSecondLargest = (arr) => {
+    arr.sort((a,b) => a - b)
+    return arr.at(-1) - 1
+}
+
+const isSymmetric = (arr) => {
+    let arrRS = []
+    for (let i = arr.length-1; i>=0;i--){
+        arrRS.push(arr[i])
+    }
+    const isEqual = (a, b) => {
+    if (a.length !== b.length) return false;
+
+    return a.every((value, index) => value === b[index]);
+    };
+
+    return isEqual(arr, arrRS)
+
+}
+
+const flattenArray = (arr) =>{
+    let arrRS1 = arr[0]
+    let arrRS2 = arr[1]
+    let arrRS = [...arrRS1 ,...arrRS2]
+    return arrRS
+}
+
+const removeDuplicates  = (arr) =>{
+    let rs = []
+    for (let i of arr){
+        if(!rs.includes(i)){
+            rs.push(i)
+        }
+    }
+    return rs
+}
+
+const countOccurrences = (arr,value) => {
+    let count = 0
+    for (let i of arr){
+        if (i === value){
+            count++
+        }
+    }
+    return count
+} 
+
+const sumofArr = (arr) =>{
+    let sum = 0;
+    for (let i of arr){
+        sum+=i
+    }
+    return sum
+}
 export {findMin,countWords,sumbyKey,sortStringsByLength,convertToArray,getAdults,groupByFirstLetter,filterByMinValue
-    ,intersection,uniqueValues,sumByGroup,hasDuplicate,countElements
+    ,intersection,uniqueValues,sumByGroup,hasDuplicate,countElements,cleanObject,findSecondLargest,isSymmetric,flattenArray,removeDuplicates,countOccurrences,sumofArr
 }
